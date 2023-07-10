@@ -26,13 +26,13 @@ public class OrderController {
 	@Autowired
 	public BookRepository bookrepository;
 	
-	  
-	@PostMapping("/add")
-	public User placeorder(@RequestBody RequestBook requestbook) {
-		
-		return userRepository.save(requestbook.user);
-	}
-	
+  
+//	@PostMapping("/add")
+//	public User placeorder(@RequestBody RequestBook requestbook) {
+//		
+//		return userRepository.save(requestbook.user);
+//	}
+//	
 	 @GetMapping("/findAllOrders")
 	    public List<User> findAllOrders(){
 	        return userRepository.findAll();

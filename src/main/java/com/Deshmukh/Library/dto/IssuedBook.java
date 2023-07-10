@@ -9,7 +9,9 @@ public class IssuedBook {
 
 	public String f_name;
 	
-
+	public String l_name;
+	
+	public String Author_name; 
 	
 	public String Book_name;
 	
@@ -22,14 +24,15 @@ public class IssuedBook {
 		// TODO Auto-generated constructor stub
 	}
 
-	public IssuedBook(String f_name,String book_name) {
+	
+	public IssuedBook(String f_name, String l_name, String author_name, String book_name) {
 		super();
 		this.f_name = f_name;
-		
+		this.l_name = l_name;
+		Author_name = author_name;
 		Book_name = book_name;
-		
 	}
-	
+
 	public int price;
 
 	public String getF_name() {
@@ -41,6 +44,26 @@ public class IssuedBook {
 	}
 
 	
+
+	public String getL_name() {
+		return l_name;
+	}
+
+
+	public void setL_name(String l_name) {
+		this.l_name = l_name;
+	}
+
+
+	public String getAuthor_name() {
+		return Author_name;
+	}
+
+
+	public void setAuthor_name(String author_name) {
+		Author_name = author_name;
+	}
+
 
 	public String getBook_name() {
 		return Book_name;

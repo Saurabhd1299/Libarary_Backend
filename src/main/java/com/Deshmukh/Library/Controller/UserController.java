@@ -3,7 +3,7 @@ package com.Deshmukh.Library.Controller;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -47,7 +47,6 @@ public class UserController {
 		 return userrepository.findById(id).orElseThrow();
 	}
 	
-
 	
 	@DeleteMapping("/remove/{id}")
 	public ResponseEntity<Map<String, Boolean>> deleteAllUser(@PathVariable Integer id){
@@ -73,7 +72,7 @@ public class UserController {
 		user.setF_name(userdetails.getF_name());
 		user.setL_name(userdetails.getL_name());
 		user.setNumber(userdetails.getNumber());
-		user.setCity(userdetails.geCity());
+		user.setCity(userdetails.getCity());
 		user.setAddress(userdetails.getAddress());
 		user.setAge(userdetails.getAge());
 		

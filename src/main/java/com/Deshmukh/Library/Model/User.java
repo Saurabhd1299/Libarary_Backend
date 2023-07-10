@@ -85,9 +85,21 @@ public class User {
 		Address = address;
 	}
 
-	public String geCity() {
+	public String getCity() {
 		return city;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
 
 	public void setCity(String city) {
 		this.city = city;

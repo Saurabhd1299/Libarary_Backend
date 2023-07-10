@@ -14,7 +14,17 @@ public class UserService {
 		@Autowired
 		public UserRepository userrepository;
 		
+		
 		public List<User> getuserByCity(String city){
 			return userrepository.findByCity(city);
 		}
+		
+		public User authenticateUser(User user) {
+			User opUser = userrepository.findByf_name(user.getF_name());
+			if(opUser.getNumber().equals(user.getNumber())) {
+				return opUser;
+			}
+			return null;
+		}
+		
 }
